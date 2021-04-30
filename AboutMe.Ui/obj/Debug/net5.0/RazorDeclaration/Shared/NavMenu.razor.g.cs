@@ -7,7 +7,6 @@
 namespace AboutMe.Ui.Shared
 {
     #line hidden
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -82,6 +81,20 @@ using AboutMe.Ui.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
+using BlazorFluentUI;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
+using System;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,21 +102,6 @@ using AboutMe.Ui.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 28 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/Shared/NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

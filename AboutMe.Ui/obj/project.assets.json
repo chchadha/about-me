@@ -2,10 +2,118 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Microsoft.AspNetCore.Authorization/5.0.4": {
+      "BlazorFluentUI.CoreComponents/5.2.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "5.0.4",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net5.0/wwwroot/baseComponent.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/callout.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/detailsList.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/documentCard.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/focusTrapZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/focusZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/list.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/marqueeSelection.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/panel.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/selectionZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/slider.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/BlazorFluentUI.CoreComponents.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorFluentUI.CoreComponents.props": {}
+        }
+      },
+      "BlazorFluentUI.ListComponents/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "BlazorFluentUI.CoreComponents": "5.2.7",
+          "DynamicData": "7.1.1",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorFluentUI.ListComponents.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorFluentUI.ListComponents.props": {}
+        }
+      },
+      "DynamicData/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DynamicData.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "5.0.5",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0"
         },
@@ -16,11 +124,11 @@
           "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components/5.0.4": {
+      "Microsoft.AspNetCore.Components/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "5.0.4",
-          "Microsoft.AspNetCore.Components.Analyzers": "5.0.4"
+          "Microsoft.AspNetCore.Authorization": "5.0.5",
+          "Microsoft.AspNetCore.Components.Analyzers": "5.0.5"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
@@ -29,16 +137,16 @@
           "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/5.0.4": {
+      "Microsoft.AspNetCore.Components.Analyzers/5.0.5": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/5.0.4": {
+      "Microsoft.AspNetCore.Components.Forms/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "5.0.4"
+          "Microsoft.AspNetCore.Components": "5.0.5"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
@@ -47,13 +155,13 @@
           "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Web/5.0.4": {
+      "Microsoft.AspNetCore.Components.Web/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "5.0.4",
-          "Microsoft.AspNetCore.Components.Forms": "5.0.4",
+          "Microsoft.AspNetCore.Components": "5.0.5",
+          "Microsoft.AspNetCore.Components.Forms": "5.0.5",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
-          "Microsoft.JSInterop": "5.0.4",
+          "Microsoft.JSInterop": "5.0.5",
           "System.IO.Pipelines": "5.0.1"
         },
         "compile": {
@@ -88,7 +196,7 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/5.0.4": {
+      "Microsoft.AspNetCore.Metadata/5.0.5": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
@@ -267,7 +375,7 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.JSInterop/5.0.4": {
+      "Microsoft.JSInterop/5.0.5": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.JSInterop.dll": {}
@@ -304,14 +412,134 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
         }
       }
     },
     "net5.0/browser-wasm": {
-      "Microsoft.AspNetCore.Authorization/5.0.4": {
+      "BlazorFluentUI.CoreComponents/5.2.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "5.0.4",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net5.0/wwwroot/baseComponent.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/callout.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/detailsList.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/documentCard.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/focusTrapZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/focusZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/list.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/marqueeSelection.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/panel.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/selectionZone.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net5.0/wwwroot/slider.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/BlazorFluentUI.CoreComponents.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorFluentUI.CoreComponents.props": {}
+        }
+      },
+      "BlazorFluentUI.ListComponents/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "BlazorFluentUI.CoreComponents": "5.2.7",
+          "DynamicData": "7.1.1",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5"
+        },
+        "compile": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/BlazorFluentUI.ListComponents.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorFluentUI.ListComponents.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorFluentUI.ListComponents.props": {}
+        }
+      },
+      "DynamicData/7.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DynamicData.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DynamicData.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/5.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "5.0.5",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0"
         },
@@ -322,11 +550,11 @@
           "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components/5.0.4": {
+      "Microsoft.AspNetCore.Components/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "5.0.4",
-          "Microsoft.AspNetCore.Components.Analyzers": "5.0.4"
+          "Microsoft.AspNetCore.Authorization": "5.0.5",
+          "Microsoft.AspNetCore.Components.Analyzers": "5.0.5"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
@@ -335,16 +563,16 @@
           "lib/net5.0/Microsoft.AspNetCore.Components.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/5.0.4": {
+      "Microsoft.AspNetCore.Components.Analyzers/5.0.5": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/5.0.4": {
+      "Microsoft.AspNetCore.Components.Forms/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "5.0.4"
+          "Microsoft.AspNetCore.Components": "5.0.5"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
@@ -353,13 +581,13 @@
           "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Web/5.0.4": {
+      "Microsoft.AspNetCore.Components.Web/5.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "5.0.4",
-          "Microsoft.AspNetCore.Components.Forms": "5.0.4",
+          "Microsoft.AspNetCore.Components": "5.0.5",
+          "Microsoft.AspNetCore.Components.Forms": "5.0.5",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
-          "Microsoft.JSInterop": "5.0.4",
+          "Microsoft.JSInterop": "5.0.5",
           "System.IO.Pipelines": "5.0.1"
         },
         "compile": {
@@ -394,7 +622,7 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/5.0.4": {
+      "Microsoft.AspNetCore.Metadata/5.0.5": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
@@ -573,7 +801,7 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.JSInterop/5.0.4": {
+      "Microsoft.JSInterop/5.0.5": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.JSInterop.dll": {}
@@ -610,15 +838,118 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {}
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
         }
       }
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.Authorization/5.0.4": {
-      "sha512": "Dwzl3JvBpPo6kkw8uZ+I/s7qzUDZ9YeGkLecFKevfk69YoKN945VfLREV06fJnINaC/cGkPy7cd/mvMyiyaQ0w==",
+    "BlazorFluentUI.CoreComponents/5.2.7": {
+      "sha512": "hEMJf8n6t8eECvvmMs3aV9nN9X90qmFPsMS44kKx4QQaI8r41e2Bsnx3KI2bPN3ttXxTYiQugntKFSqf2Y+Kvg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/5.0.4",
+      "path": "blazorfluentui.corecomponents/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "blazorfluentui.corecomponents.5.2.7.nupkg.sha512",
+        "blazorfluentui.corecomponents.nuspec",
+        "build/BlazorFluentUI.CoreComponents.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorFluentUI.CoreComponents.props",
+        "buildTransitive/BlazorFluentUI.CoreComponents.props",
+        "content/wwwroot/baseComponent.js",
+        "content/wwwroot/callout.js",
+        "content/wwwroot/detailsList.js",
+        "content/wwwroot/documentCard.js",
+        "content/wwwroot/focusTrapZone.js",
+        "content/wwwroot/focusZone.js",
+        "content/wwwroot/list.js",
+        "content/wwwroot/marqueeSelection.js",
+        "content/wwwroot/panel.js",
+        "content/wwwroot/selectionZone.js",
+        "content/wwwroot/slider.js",
+        "contentFiles/any/net5.0/wwwroot/baseComponent.js",
+        "contentFiles/any/net5.0/wwwroot/callout.js",
+        "contentFiles/any/net5.0/wwwroot/detailsList.js",
+        "contentFiles/any/net5.0/wwwroot/documentCard.js",
+        "contentFiles/any/net5.0/wwwroot/focusTrapZone.js",
+        "contentFiles/any/net5.0/wwwroot/focusZone.js",
+        "contentFiles/any/net5.0/wwwroot/list.js",
+        "contentFiles/any/net5.0/wwwroot/marqueeSelection.js",
+        "contentFiles/any/net5.0/wwwroot/panel.js",
+        "contentFiles/any/net5.0/wwwroot/selectionZone.js",
+        "contentFiles/any/net5.0/wwwroot/slider.js",
+        "lib/net5.0/BlazorFluentUI.CoreComponents.dll",
+        "staticwebassets/BlazorFluentUI.CoreComponents.bundle.scp.css",
+        "staticwebassets/baseComponent.js",
+        "staticwebassets/callout.js",
+        "staticwebassets/detailsList.js",
+        "staticwebassets/documentCard.js",
+        "staticwebassets/focusTrapZone.js",
+        "staticwebassets/focusZone.js",
+        "staticwebassets/list.js",
+        "staticwebassets/marqueeSelection.js",
+        "staticwebassets/panel.js",
+        "staticwebassets/richTextEditor.js",
+        "staticwebassets/selectionZone.js",
+        "staticwebassets/slider.js"
+      ]
+    },
+    "BlazorFluentUI.ListComponents/5.2.7": {
+      "sha512": "I4S3AO1foiiQAPNf3maRANtXjvqp1SUcaf3ddXBsJYpKD+L0vHu9oa/D2ugO3lNlzqNRnzJ62IVtDGeyTlVLMA==",
+      "type": "package",
+      "path": "blazorfluentui.listcomponents/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "blazorfluentui.listcomponents.5.2.7.nupkg.sha512",
+        "blazorfluentui.listcomponents.nuspec",
+        "build/BlazorFluentUI.ListComponents.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorFluentUI.ListComponents.props",
+        "buildTransitive/BlazorFluentUI.ListComponents.props",
+        "lib/net5.0/BlazorFluentUI.ListComponents.dll",
+        "staticwebassets/BlazorFluentUI.ListComponents.bundle.scp.css"
+      ]
+    },
+    "DynamicData/7.1.1": {
+      "sha512": "Pc6J5bFnSxEa64PV2V67FMcLlDdpv6m+zTBKSnRN3aLon/WtWWy8kuDpHFbJlgXHtqc6Nxloj9ItuvDlvKC/8w==",
+      "type": "package",
+      "path": "dynamicdata/7.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "dynamicdata.7.1.1.nupkg.sha512",
+        "dynamicdata.nuspec",
+        "lib/net461/DynamicData.dll",
+        "lib/net461/DynamicData.xml",
+        "lib/net5.0/DynamicData.dll",
+        "lib/net5.0/DynamicData.xml",
+        "lib/netstandard2.0/DynamicData.dll",
+        "lib/netstandard2.0/DynamicData.xml",
+        "lib/uap10.0.16299/DynamicData.dll",
+        "lib/uap10.0.16299/DynamicData.pri",
+        "lib/uap10.0.16299/DynamicData.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization/5.0.5": {
+      "sha512": "pQSx1MrLJlKwlEclliO9aUwKxe9EKI2Mff39VE1t5VYOjqsMyI2ujWKGI6XAUsnmC0Bta67GZ1k4DbQZd7tJKg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -630,14 +961,14 @@
         "lib/net5.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/5.0.4": {
-      "sha512": "Jp2CH8XuXz7oF2qapZdL1P9Nrnc1YHeApyY9reUSsdYNkjRXKn/zFhXT1SCkMOpsz/I4zNMs12nB/LnzkThK2Q==",
+    "Microsoft.AspNetCore.Components/5.0.5": {
+      "sha512": "Hmx7CyjqhmcMKUjLAOS0S2cJaJ+jO2Tw0nHNIKVIkzU/5a3vvtT39x/kOXlwJiTK6+nWHlZ7HzL2TaTkeNON/w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/5.0.4",
+      "path": "microsoft.aspnetcore.components/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -645,14 +976,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net5.0/Microsoft.AspNetCore.Components.dll",
         "lib/net5.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.components.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/5.0.4": {
-      "sha512": "GL8TgvVEhkX/HOw+y/N3McmVYFLBN0ZZeWLrBoECfqkgYKsK85vNSQx+LSrDNJvNguBXCC+HfPG4joQAKn8IOg==",
+    "Microsoft.AspNetCore.Components.Analyzers/5.0.5": {
+      "sha512": "psHOvHEWJC5BDNCAp7BJQMhv68mbhZMPFArf4RArrSYzIYMxQPDS/DgnAs3getHzQhHqEkrAhfEa7YXyW+bZSw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/5.0.4",
+      "path": "microsoft.aspnetcore.components.analyzers/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -661,14 +992,14 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Forms/5.0.4": {
-      "sha512": "yFRVKCxEddSqOr5T9Y8AnxpqaKqUcAnxKnpMQNNki+R3DkuxslD1AhkkzwIF9OG0f9mxrVcnp3iQ290r9g1k9A==",
+    "Microsoft.AspNetCore.Components.Forms/5.0.5": {
+      "sha512": "Kq5Zb30TkHMpTi7Ri6jgrNikFkAv7zFPW50m3iCXdY28eB7+z4VuSnuI+8y/c2LDAPsen3HXwqDMURfgDEYe8A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.forms/5.0.4",
+      "path": "microsoft.aspnetcore.components.forms/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -676,14 +1007,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net5.0/Microsoft.AspNetCore.Components.Forms.dll",
         "lib/net5.0/Microsoft.AspNetCore.Components.Forms.xml",
-        "microsoft.aspnetcore.components.forms.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Web/5.0.4": {
-      "sha512": "WypuPxkJiX+aeQO4hc0szU6OQKFA7zQyki8q+62J030GFbrPRDtc6D1LFbLjvH0OWjvCWraU4EAwH63qOult6w==",
+    "Microsoft.AspNetCore.Components.Web/5.0.5": {
+      "sha512": "F5Xh3UQcA9sHYoX6Cui7cxc8taIFqf85C/aL419ZscYe/e4m11Hx0RZc38bis7cedAOGtE9zE2SUGR6K19gy8A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.web/5.0.4",
+      "path": "microsoft.aspnetcore.components.web/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -691,7 +1022,7 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net5.0/Microsoft.AspNetCore.Components.Web.dll",
         "lib/net5.0/Microsoft.AspNetCore.Components.Web.xml",
-        "microsoft.aspnetcore.components.web.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
@@ -746,10 +1077,10 @@
         "tools/x86/aspnetcorev2_inprocess.dll"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/5.0.4": {
-      "sha512": "G5XkoTq4fj/zPUh/DO3GxdrP4IRclhTN16ni4oJUMVnqaW2VnfUSiR+lJj6NOPaFxXZByy4K9cnERB2xd6SXfw==",
+    "Microsoft.AspNetCore.Metadata/5.0.5": {
+      "sha512": "SD+puPsFLQXWwzoMiXv8lpFGHyZg0gKp3OP2EXg3eRlwJQOMaUGMIqbCdfHGR4MBaUZtqY/tU68H1bzb6+FSxA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/5.0.4",
+      "path": "microsoft.aspnetcore.metadata/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -761,7 +1092,7 @@
         "lib/net5.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.5.0.5.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -1057,10 +1388,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.JSInterop/5.0.4": {
-      "sha512": "RfsrVrO9YAL+qn3SRcvsqFaRREP4bJWy0SeF6yRlviouEdsIXkY2YVMdGzF02+CsCAlRvcEa2QrbUrcrpx9vPQ==",
+    "Microsoft.JSInterop/5.0.5": {
+      "sha512": "Ik1tdMAIb7i9vlv5pvF+aMVnoOXWUfRFMpiyHSMg+0spbcBqqq1vBVMuyqjh7PZlqWPyFqYrfToEonGh2ztT0w==",
       "type": "package",
-      "path": "microsoft.jsinterop/5.0.4",
+      "path": "microsoft.jsinterop/5.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1068,7 +1399,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net5.0/Microsoft.JSInterop.dll",
         "lib/net5.0/Microsoft.JSInterop.xml",
-        "microsoft.jsinterop.5.0.4.nupkg.sha512",
+        "microsoft.jsinterop.5.0.5.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
@@ -1134,10 +1465,41 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BlazorFluentUI.CoreComponents >= 5.2.7",
+      "BlazorFluentUI.ListComponents >= 5.2.7",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.4",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.4",
       "System.Net.Http.Json >= 5.0.0"
@@ -1180,6 +1542,14 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "BlazorFluentUI.CoreComponents": {
+            "target": "Package",
+            "version": "[5.2.7, )"
+          },
+          "BlazorFluentUI.ListComponents": {
+            "target": "Package",
+            "version": "[5.2.7, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[5.0.4, )"

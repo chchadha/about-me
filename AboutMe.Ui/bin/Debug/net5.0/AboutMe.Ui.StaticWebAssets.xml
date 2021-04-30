@@ -1,4 +1,6 @@
 ﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/BlazorFluentUI.CoreComponents" Path="/Users/chiragchadha/.nuget/packages/blazorfluentui.corecomponents/5.2.7/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/BlazorFluentUI.ListComponents" Path="/Users/chiragchadha/.nuget/packages/blazorfluentui.listcomponents/5.2.7/build/../staticwebassets/" />
   <ContentRoot BasePath="/" Path="/Users/chiragchadha/Developer/about-me/AboutMe.Ui/bin/Debug/net5.0/wwwroot/" />
   <ContentRoot BasePath="/" Path="/Users/chiragchadha/Developer/about-me/AboutMe.Ui/obj/Debug/net5.0/scopedcss/bundle/" />
 </StaticWebAssets>

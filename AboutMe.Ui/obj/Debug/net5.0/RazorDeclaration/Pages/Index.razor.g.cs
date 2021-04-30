@@ -7,7 +7,6 @@
 namespace AboutMe.Ui.Pages
 {
     #line hidden
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -78,6 +77,20 @@ using AboutMe.Ui;
 #nullable restore
 #line 10 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
 using AboutMe.Ui.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
+using BlazorFluentUI;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
+using System;
 
 #line default
 #line hidden

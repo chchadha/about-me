@@ -38,6 +38,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BlazorFluentUI.CoreComponents": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "BlazorFluentUI.ListComponents": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[5.0.4, )"

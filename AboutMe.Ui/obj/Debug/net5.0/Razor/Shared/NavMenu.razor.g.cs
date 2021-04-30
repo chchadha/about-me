@@ -79,6 +79,13 @@ using AboutMe.Ui.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "/Users/chiragchadha/Developer/about-me/AboutMe.Ui/_Imports.razor"
+using BlazorFluentUI;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
